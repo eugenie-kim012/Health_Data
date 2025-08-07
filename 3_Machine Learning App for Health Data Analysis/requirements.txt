@@ -1,10 +1,9 @@
 streamlit
 pandas
+numpy
 matplotlib
-ploty
 seaborn
 scikit-learn
 lightgbm
 xgboost
-numpy
 scipy
