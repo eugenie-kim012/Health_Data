@@ -7,3 +7,5 @@ scikit-learn
 lightgbm
 xgboost
 scipy
+reportlab
+fpdf2
