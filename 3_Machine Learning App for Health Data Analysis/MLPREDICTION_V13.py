@@ -1,3 +1,5 @@
+import matplotlib
+matplotlib.use('Agg')  # Streamlit Cloud용 필수 설정
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -9,10 +11,11 @@ from sklearn.svm import SVC
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score, roc_curve, auc, precision_recall_curve
 from lightgbm import LGBMClassifier
 from xgboost import XGBClassifier
-import shap
+# import shap  # 사용하지 않으므로 제거
 from io import BytesIO
-from xhtml2pdf import pisa
+# from xhtml2pdf import pisa  # PDF 기능 제거
 import itertools
+import base64
 
 st.title("📊 Health Data ML Prediction 📊")
 
@@ -779,8 +782,8 @@ if uploaded_file:
                     plt.tight_layout()
                     st.pyplot(fig_pr)
 
-                # PDF 리포트 생성
-                st.subheader("📊 Download Results")
+                    # PDF 리포트
+                    st.subheader("📄 Report Download")
                 
                 # 결과 데이터 다운로드
                 col1, col2, col3 = st.columns(3)
@@ -877,19 +880,19 @@ if uploaded_file:
                     pdf_bytes = BytesIO()
                     pisa.CreatePDF(BytesIO(report_html.encode('utf-8')), dest=pdf_bytes)
                     pdf_base64 = base64.b64encode(pdf_bytes.getvalue()).decode('utf-8')
-                    href = f'<a href="data:application/pdf;base64,{pdf_base64}" download="model_report_{pd.Timestamp.now().strftime("%Y%m%d_%H%M%S")}.pdf">📄 Download Comprehensive PDF Report</a>'
+                    href = f'<a href="data:application/pdf;base64,{pdf_base64}" download="model_report_{pd.Timestamp.now().strftime("%Y%m%d_%H%M%S")}.pdf">📄 Download PDF Report</a>'
                     st.markdown(href, unsafe_allow_html=True)
                 except Exception as e:
                     st.warning(f"PDF generation failed: {str(e)}")
+                    PDF_AVAILABLE = False
                     
-                    # PDF 생성 실패 시 HTML 리포트 다운로드 제공
+                    # PDF가 안되면 HTML 대안 제공
                     st.download_button(
                         label="📝 Download HTML Report",
                         data=report_html,
                         file_name=f"model_report_{pd.Timestamp.now().strftime('%Y%m%d_%H%M%S')}.html",
                         mime="text/html"
                     )
-
             else:
                 st.warning("Please select at least one model to compare.")
             
