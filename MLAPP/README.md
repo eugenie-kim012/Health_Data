@@ -66,16 +66,16 @@ An end-to-end machine learning app designed to make health data analysis easy, e
 
 # 🗂️ Folder Structure
 
-''' 
-
-📁 app/
-  └── main_app.py
-📁 data/
-  └── sample_data.csv
-📄 requirements.txt
-📄 README.md
-
-'''
+```
+bash
+CopyEdit
+your-repo/
+ ├── requirements.txt
+ ├── app/
+ │    └── sample_data.csv
+ ├── data/
+      └── sample_data.csv
+```
 
 # 🧠 Why This Project?
 
