@@ -1,5 +1,8 @@
 # Health_Data
 
+0_ LLM Drug Discovery group project: https://github.com/SARang-Labs/sar-project
+Evaluation mechanism 
+
 1_
 
 2_
