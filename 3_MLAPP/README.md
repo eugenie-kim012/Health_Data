@@ -2,7 +2,7 @@
 
 ## Building a Machine Learning App for Health Data Analysis
 
-https://www.notion.so/eugeniekim012/Building-a-Machine-Learning-App-for-Health-Data-Analysis-1eebdaab6ba480ffbfd3ef827eb0848a
+✅ https://www.notion.so/eugeniekim012/Building-a-Machine-Learning-App-for-Health-Data-Analysis-1eebdaab6ba480ffbfd3ef827eb0848a
 
 An end-to-end machine learning app designed to make health data analysis easy, especially for non-engineers working in global health, policy, and healthcare financing. This app lets users upload a CSV file and immediately start exploring their data, selecting features, and running classification models—all within a Streamlit UI.
 
