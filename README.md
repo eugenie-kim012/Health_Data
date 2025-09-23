@@ -1,4 +1,4 @@
-## Health Data Analysis Portfolio
+# Health Data Analysis Portfolio
 
 This repository showcases practical applications of data science in global health, ranging from LLM-based drug discovery to interactive WHO dashboards. These projects were developed both independently and collaboratively through a data science bootcamp program. Please note that using [GEMINI API](https://ai.google.dev/gemini-api/docs/api-key?hl=ko) provides accessible LLM protocols within free usage limits for experimentation.
 
@@ -6,7 +6,6 @@ I see data not merely as numbers, but as the 'language' of evidence-based policy
 
 Each project below includes policy implications, highlighting how data-driven insights can inform health and development strategies that leverage both my domain expertise and emerging technical skills. Any comments are welcome 😊
 
----
 
 ## 🚀 0. LLM Drug Discovery
 
@@ -19,7 +18,6 @@ Each project below includes policy implications, highlighting how data-driven in
     - [Evaluation Mechanism – Blog Post](https://eugenie-kim012.tistory.com/15) ✅
 - **Policy Implications**: Novel AI evaluation methods for drug discovery can significantly reduce R&D costs and accelerate access to medicines. This has direct relevance for essential, rare and neglected diseases and global health systems facing limited pharmaceutical innovation. Drawing from my graduate research on public finance in R&D and the quantified impact of advance market commitments for vaccination programs in least developed countries, I recognise how market failures in drug discovery for essential technologies can be addressed through innovative approaches like LLM-assisted discovery.
 
----
 
 ## 📊 1.Mental Health ML Prediction (Datathon)
 
@@ -38,7 +36,6 @@ Each project below includes policy implications, highlighting how data-driven in
     - [Blog Post](https://eugenie-kim012.tistory.com/7) ✅
 - **Policy Implications**: LLM can be used for the brainstormings!  However, Future development may incorporate evaluation matrices developed through the SAR-Lang project experience.
 
----
 
 ## 🤖 3. Machine Learning App for Health Data
 
@@ -50,7 +47,6 @@ Each project below includes policy implications, highlighting how data-driven in
 - **Policy Implications**:
 By lowering barriers to ML adoption, such tools empower policy analysts and healthcare managers to test predictive models without coding expertise. This contributes to capacity building in digital health and health systems strengthening, while expanding my analytical portfolio in health economics applications.
 
----
 
 ## 📑 4. Wise-Aging bot
 
@@ -64,7 +60,6 @@ By lowering barriers to ML adoption, such tools empower policy analysts and heal
 - **Policy Implications**:
 This Streamlit-based chatbot leverages LangChain and RAG to explore relevant OECD reports, assist in policy analysis drafting, and provide stakeholder Q&A support. Users can upload PDF reports, filter materials by topic/country/year, and perform policy analysis using the OpenAI API. The system adopts a senior health policy analyst persona to respond to inquiries from policymakers, academics, administrators, and civil society organizations. Source materials were obtained from the [OECD Data Platform](https://www.oecd.org/en/data.html).
 
----
 
 ## 🌍 5. WHO Data Analysis: Triple Billion Dashboard
 
@@ -79,5 +74,3 @@ This Streamlit-based chatbot leverages LangChain and RAG to explore relevant OEC
     - [Notion Portfolio](https://www.notion.so/Summer-Break-Data-Analysis-WHO-OPEN-Data-246bdaab6ba480208b37d9b97d8e1390?pvs=21)
 - **Policy Implications**:
 Interactive dashboards enable governments and development partners to monitor progress toward SDGs and WHO targets. This facilitates transparent accountability, evidence-based resource allocation, and informed global health diplomacy decisions.
-
----
