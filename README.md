@@ -1,4 +1,4 @@
-# Health Data Analysis Portfolio
+# Eugenie's Health Data Analysis Portfolio ⭐⭐
 
 This repository showcases practical applications of data science in global health, ranging from LLM-based drug discovery to interactive WHO dashboards. These projects were developed both independently and collaboratively through a data science bootcamp program. Please note that using [GEMINI API](https://ai.google.dev/gemini-api/docs/api-key?hl=ko) provides accessible LLM protocols within free usage limits for experimentation.
 
@@ -15,7 +15,8 @@ Each project below includes policy implications, highlighting how data-driven in
 - Methods/Tools: Python (RDKit, Scikit-learn), vector databases, evaluation metrics (including Activity Cliff detection).
 - **Outputs**:
     - [GitHub Repository (SARang-Labs)](https://github.com/SARang-Labs/sar-project)
-    - [Evaluation Mechanism – Blog Post](https://eugenie-kim012.tistory.com/15) ✅
+    - [Evaluation Mechanism – Blog Post](https://eugenie-kim012.tistory.com/15)
+    - [Notion Portfolio](https://www.notion.so/Capstone-Automating-SAR-Reports-Generation-259bdaab6ba480999b40f9f71e6af975?pvs=21)
 - **Policy Implications**: Novel AI evaluation methods for drug discovery can significantly reduce R&D costs and accelerate access to medicines. This has direct relevance for essential, rare and neglected diseases and global health systems facing limited pharmaceutical innovation. Drawing from my graduate research on public finance in R&D and the quantified impact of advance market commitments for vaccination programs in least developed countries, I recognise how market failures in drug discovery for essential technologies can be addressed through innovative approaches like LLM-assisted discovery.
 
 
@@ -33,7 +34,7 @@ Each project below includes policy implications, highlighting how data-driven in
 - **Objective**: Supporting researchers in developing competitive proposals using AI assistance tailored to health economics and global health domains, particularly for brainstorming and initial conceptualisation.
 - **Methods/Tools**: LLM integration, Streamlit, Python
 - **Outputs**:
-    - [Blog Post](https://eugenie-kim012.tistory.com/7) ✅
+    - [Blog Post](https://eugenie-kim012.tistory.com/7) 
 - **Policy Implications**: LLM can be used for the brainstormings!  However, Future development may incorporate evaluation matrices developed through the SAR-Lang project experience.
 
 
@@ -43,7 +44,8 @@ Each project below includes policy implications, highlighting how data-driven in
 - **Objective**: Deploy a Streamlit application to make machine learning accessible for non-technical users in health policy and healthcare management.
 - **Methods/Tools**: Scikit-learn (classification & regression models), Streamlit, Python
 - **Outputs**:
-    - [Notion Portfolio](https://www.notion.so/Building-a-Machine-Learning-App-for-Health-Data-Analysis-1eebdaab6ba480ffbfd3ef827eb0848a?pvs=21) ✅
+    - [Notion Portfolio](https://www.notion.so/Building-a-Machine-Learning-App-for-Health-Data-Analysis-1eebdaab6ba480ffbfd3ef827eb0848a?pvs=21)
+    - [Blog Post](https://eugenie-kim012.tistory.com/11)
 - **Policy Implications**:
 By lowering barriers to ML adoption, such tools empower policy analysts and healthcare managers to test predictive models without coding expertise. This contributes to capacity building in digital health and health systems strengthening, while expanding my analytical portfolio in health economics applications.
 
@@ -56,7 +58,7 @@ By lowering barriers to ML adoption, such tools empower policy analysts and heal
     - OECD health and aging-related publications
 - **Methods/Tools**: LLM integration, Python, LangChain, RAG (Retrieval-Augmented Generation)
 - **Outputs**:
-    - [Blog Post](https://eugenie-kim012.tistory.com/8) ✅
+    - [Blog Post](https://eugenie-kim012.tistory.com/8) 
 - **Policy Implications**:
 This Streamlit-based chatbot leverages LangChain and RAG to explore relevant OECD reports, assist in policy analysis drafting, and provide stakeholder Q&A support. Users can upload PDF reports, filter materials by topic/country/year, and perform policy analysis using the OpenAI API. The system adopts a senior health policy analyst persona to respond to inquiries from policymakers, academics, administrators, and civil society organizations. Source materials were obtained from the [OECD Data Platform](https://www.oecd.org/en/data.html).
 
@@ -72,5 +74,6 @@ This Streamlit-based chatbot leverages LangChain and RAG to explore relevant OEC
 - **Impact**: Dashboard visualizes regional contributions and progress toward WHO goals, providing actionable policy insights for global health monitoring and accountability.
 - **Outputs**:
     - [Notion Portfolio](https://www.notion.so/Summer-Break-Data-Analysis-WHO-OPEN-Data-246bdaab6ba480208b37d9b97d8e1390?pvs=21)
+    - [Blot Post](https://eugenie-kim012.tistory.com/10)
 - **Policy Implications**:
 Interactive dashboards enable governments and development partners to monitor progress toward SDGs and WHO targets. This facilitates transparent accountability, evidence-based resource allocation, and informed global health diplomacy decisions.
