@@ -1,4 +1,4 @@
-# Eugenie's Health Data Analysis Portfolio ⭐⭐
+# ⭐⭐ Eugenie's Health Data Analysis Portfolio 
 
 This repository showcases practical applications of data science in global health, ranging from LLM-based drug discovery to interactive WHO dashboards. These projects were developed both independently and collaboratively through a data science bootcamp program. Please note that using [GEMINI API](https://ai.google.dev/gemini-api/docs/api-key?hl=ko) provides accessible LLM protocols within free usage limits for experimentation.
 
@@ -8,7 +8,6 @@ Each project below includes policy implications, highlighting how data-driven in
 
 
 ## 🚀 0. LLM Drug Discovery
-
 - Overview: Collaborative project exploring how Large Language Models (LLMs) can accelerate early-stage drug discovery processes.
 - Objective: While the team focused on coding implementation, I developed evaluation mechanisms for LLMs in Structure–Activity Relationship (SAR) tasks and proposed systematic evaluation frameworks.
 - Dataset(s): Proprietary data provided by a drug discovery startup for this capstone project.
@@ -21,10 +20,11 @@ Each project below includes policy implications, highlighting how data-driven in
 
 
 ## 📊 1.Mental Health ML Prediction (Datathon)
-
 - **Overview**: As part of the ModuLabs data scientist programme’s Datathon, we collaboratively explored a Kaggle dataset. After generating correlation heatmaps between indicators, I focused on work/study stress, life satisfaction, and the relationship between suicidal thoughts and depression diagnosis to explore increase the accuracy of the algorithm for depression and mental health conditions. Other team members had been explored other components such as the relationships between green space and the mental health, which was still very interesting and relevant.
 - **Objective**: The main objective of this Kaggle project was to predict depression in patients using machine learning algorithms, while gaining insights into mental health data patterns.
 - **Dataset(s)**: [Kaggle Dataset](https://www.kaggle.com/competitions/playground-series-s4e11)
+- **Outputs**:
+  - URL: https://github.com/eugenie-kim012/Health_Data/blob/main/1_Mental_health_MLPrediction(Datathon).ipynb
 - **Methods/Tools**:  Python (Pandas, Scikit-learn, Matplotlib/Seaborn for visualization)
 - **Policy Implications**: Early prediction models for mental health conditions can enable preventive interventions and resource allocation in healthcare systems. Understanding correlations between lifestyle factors (work stress, life satisfaction) and mental health outcomes can inform workplace wellness policies and public health prevention strategies. This approach supports the development of digital health screening tools that could be integrated into primary healthcare settings, particularly valuable in resource-constrained environments where mental health specialists are limited.
 
@@ -34,6 +34,7 @@ Each project below includes policy implications, highlighting how data-driven in
 - **Objective**: Supporting researchers in developing competitive proposals using AI assistance tailored to health economics and global health domains, particularly for brainstorming and initial conceptualisation.
 - **Methods/Tools**: LLM integration, Streamlit, Python
 - **Outputs**:
+    - URL: https://github.com/eugenie-kim012/Health_Data/blob/main/2_Research_Proposal_Tutor_V1.py
     - [Blog Post](https://eugenie-kim012.tistory.com/7) 
 - **Policy Implications**: LLM can be used for the brainstormings!  However, Future development may incorporate evaluation matrices developed through the SAR-Lang project experience.
 
@@ -44,6 +45,7 @@ Each project below includes policy implications, highlighting how data-driven in
 - **Objective**: Deploy a Streamlit application to make machine learning accessible for non-technical users in health policy and healthcare management.
 - **Methods/Tools**: Scikit-learn (classification & regression models), Streamlit, Python
 - **Outputs**:
+    - URL: https://github.com/eugenie-kim012/Health_Data/tree/main/3_MLAPP
     - [Notion Portfolio](https://www.notion.so/Building-a-Machine-Learning-App-for-Health-Data-Analysis-1eebdaab6ba480ffbfd3ef827eb0848a?pvs=21)
     - [Blog Post](https://eugenie-kim012.tistory.com/11)
 - **Policy Implications**:
@@ -58,6 +60,7 @@ By lowering barriers to ML adoption, such tools empower policy analysts and heal
     - OECD health and aging-related publications
 - **Methods/Tools**: LLM integration, Python, LangChain, RAG (Retrieval-Augmented Generation)
 - **Outputs**:
+    - URL: https://github.com/eugenie-kim012/Health_Data/tree/main/4_Wise-Aging-Bot
     - [Blog Post](https://eugenie-kim012.tistory.com/8) 
 - **Policy Implications**:
 This Streamlit-based chatbot leverages LangChain and RAG to explore relevant OECD reports, assist in policy analysis drafting, and provide stakeholder Q&A support. Users can upload PDF reports, filter materials by topic/country/year, and perform policy analysis using the OpenAI API. The system adopts a senior health policy analyst persona to respond to inquiries from policymakers, academics, administrators, and civil society organizations. Source materials were obtained from the [OECD Data Platform](https://www.oecd.org/en/data.html).
@@ -73,6 +76,7 @@ This Streamlit-based chatbot leverages LangChain and RAG to explore relevant OEC
 - **Methods/Tools**: Streamlit, Plotly, data wrangling with Pandas
 - **Impact**: Dashboard visualizes regional contributions and progress toward WHO goals, providing actionable policy insights for global health monitoring and accountability.
 - **Outputs**:
+    - URL: https://github.com/eugenie-kim012/Health_Data/tree/main/5_Triplebillions
     - [Notion Portfolio](https://www.notion.so/Summer-Break-Data-Analysis-WHO-OPEN-Data-246bdaab6ba480208b37d9b97d8e1390?pvs=21)
     - [Blot Post](https://eugenie-kim012.tistory.com/10)
 - **Policy Implications**:
