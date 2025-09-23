@@ -1,3 +1,5 @@
+## Health Data Analysis Portfolio
+
 This repository showcases practical applications of data science in global health, ranging from LLM-based drug discovery to interactive WHO dashboards. These projects were developed both independently and collaboratively through a data science bootcamp program. Please note that using [GEMINI API](https://ai.google.dev/gemini-api/docs/api-key?hl=ko) provides accessible LLM protocols within free usage limits for experimentation.
 
 I see data not merely as numbers, but as the 'language' of evidence-based policy-making. Building on my background in health economics and global health, investing some time after back home from Zanzibar to upskilling myself, I have been actively developing my data analysis portfolio to design evidence-based policies and serve as a bridge between technology and policy, which is the core value in health financing.
