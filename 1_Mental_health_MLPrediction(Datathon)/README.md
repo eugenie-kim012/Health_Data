@@ -38,6 +38,8 @@ This study applies machine learning techniques to predict depression using a lar
 ### 3.1 Predictive Performance
 
 * **5-Fold CV (Stacking)**: Accuracy = 0.9414 ± 0.0015.
+* <img width="417" height="247" alt="image" src="https://github.com/user-attachments/assets/208a6240-b852-41b5-8d79-e6d16b0e8fac" />
+
 
 ### 3.2 Validation Set (Final Submission)
 
@@ -144,6 +146,9 @@ The results of this analysis, combining machine learning and regression methods,
 
 * **Digital Health Strategies**: Predictive analytics could be integrated into electronic health records (EHRs) to flag potential mental health risks early.
 * **Policy Alignment**: Findings align with broader global health strategies such as the WHO Mental Health Action Plan and Sustainable Development Goals (SDGs), supporting early intervention and prevention.
+
+<img width="589" height="487" alt="image" src="https://github.com/user-attachments/assets/1a25401d-1ad4-4f7e-b27d-650887153ad5" />
+
 
 
 ## 8. Provenance and Acknowledgment
