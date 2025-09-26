@@ -1,20 +1,18 @@
 # Mental Health ML Prediction (Datathon)
 
-## 0. Abstract
+## 1. Abstract
 
-This analysis applies machine learning techniques to predict depression using a large-scale survey dataset. The primary goal is to identify key sociodemographic, lifestyle, and psychosocial factors influencing mental health while evaluating the predictive performance of different models. Results show that ensemble approaches achieve superior accuracy and highlight important risk and protective factors, with implications for early screening and policy interventions.
+This study applies machine learning techniques to predict depression using a large-scale survey dataset. The primary goal is to identify key sociodemographic, lifestyle, and psychosocial factors influencing mental health while evaluating the predictive performance of different models. Results show that ensemble approaches achieve superior accuracy and highlight important risk and protective factors, with implications for early screening and policy interventions.
 
----
+## 2. Methods
 
-## 1. Methods
-
-### 1.1. Data
+### 2.1 Data
 
 * **Source**: Kaggle Playground Series S4E11 (Train: 140,700; Test: 93,800).
 * **Target Variable**: Depression (binary: 1 = Depressed, 0 = Not Depressed).
 * **Class Distribution**: ~18.17% positive.
 
-### 1.2. Preprocessing & Feature Engineering
+### 2.2 Preprocessing & Feature Engineering
 
 * Age and CGPA discretized into bins.
 * Gender, Role, Suicidal Thoughts, Family History encoded as binary.
@@ -24,67 +22,136 @@ This analysis applies machine learning techniques to predict depression using a 
 * Derived features: Age × Work Pressure, Performance Pressure, Performance Satisfaction.
 * Target encoding for high-cardinality variables (City, Profession).
 
-### 1.3. Modeling
+### 2.3 Modeling
 
 * Outliers removed with IsolationForest (contamination = 0.04).
 * Models: Logistic Regression, Random Forest, XGBoost, LightGBM, CatBoost.
 * Final: Stacking ensemble (CatBoost + XGBoost + Histogram GBM; meta-model = Logistic Regression).
 
-### 1.4. Evaluation
+### 2.4 Evaluation
 
 * Validation: 5-fold CV.
 * Metrics: Accuracy, Precision, Recall, F1, ROC AUC.
 
----
+## 3. Results
 
-## 2. Results
-
-### 2.1. Predictive Performance
+### 3.1 Predictive Performance
 
 * **5-Fold CV (Stacking)**: Accuracy = 0.9414 ± 0.0015.
-* **Validation (Hold-out 20%)**:
 
-  * ROC AUC = 0.9731
-  * Accuracy = 0.94
-  * Precision = 0.85 (positive class)
-  * Recall = 0.79
-  * F1 = 0.82
+### 3.2 Validation Set (Final Submission)
 
-### 2.2. Feature Importance (CatBoost)
+* **ROC AUC Score**: 0.9731
 
-* Leading variables: Age, Gender, Profession (encoded), Work/Study Hours, Performance Pressure, Degree, Population Density, Sleep Hours, Student status, Age × Work Pressure.
+| Class             | Precision | Recall | F1-score | Support |
+| ----------------- | --------- | ------ | -------- | ------- |
+| 0 (Not Depressed) | 0.95      | 0.97   | 0.96     | 23,027  |
+| 1 (Depressed)     | 0.85      | 0.79   | 0.82     | 5,113   |
 
-### 2.3. Statistical Modeling
+**Overall Metrics:**
 
-* Logistic regression confirmed Age and Performance Satisfaction as protective, while Financial Stress, Performance Pressure, and Student status were strong risk factors.
+* Accuracy: **0.94** (28,140 samples)
+* Macro Average: Precision = 0.90, Recall = 0.88, F1 = 0.89
+* Weighted Average: Precision = 0.94, Recall = 0.94, F1 = 0.94
 
----
+**Interpretation:**
+
+* The model demonstrates high discriminative power (ROC AUC = 0.9731).
+* For the positive class (Depression=1): Precision = 0.85, Recall = 0.79, F1 = 0.82.
+* Negative class (Not Depressed) achieves very strong performance across all metrics.
+
+**Implications:**
+
+* The ensemble model is reliable as a screening tool, showing robust performance under imbalanced conditions.
+* Recall for the positive class could be further optimized (e.g., threshold adjustment, cost-sensitive methods).
+
+### 3.3 Feature Importance (CatBoost)
+
+The top 20 features influencing predictions are summarized below. Variables such as **Age, Gender (Male), Profession, Work/Study Hours, Performance Pressure, Degree, and Population Density** rank highest in importance, with lifestyle and contextual features (e.g., Sleep Hours, Dietary Category, Green Space) also contributing meaningfully.
+
+![Top 20 Feature Importances](file-Uyi8Cd4NxKw5k6du1KsFvy)
+
+### 3.4 ROC Curve (Stacking Ensemble)
+
+The ROC curve illustrates the strong discriminative ability of the stacking model, with an area under the curve exceeding 0.97, reflecting excellent separation between positive and negative classes.
+
+![ROC Curve (Stacking Ensemble)](file-7AdvRMYE2D33V1L7qJiAFU)
+
+### 3.5 Logistic Regression Analysis
+
+Logistic regression was conducted to provide interpretable insights into the relationships between predictors and depression outcomes.
+
+* **Depression Model**: Age (-0.7804) and Performance Satisfaction (-0.4032) are protective factors. Financial Stress (+0.5687), Performance Pressure (+0.7463), and Student status (+1.3662) increase the likelihood of depression. Pseudo R² = 0.5787.
+* **Multicollinearity (VIF)**: Most features show acceptable VIF (<10), though CGPA (~19.8) indicates some multicollinearity concerns.
+* **Suicidal Thoughts Model**: Significant predictors include Age (-0.0566), Profession (-0.0278), Financial Stress (+0.1032), Student status (+0.2920), and Performance Pressure (+0.1123). Pseudo R² = 0.0302.
+* **Interaction Terms**: Sleep Hours × Dietary Category was statistically significant (-0.0108), suggesting joint influence of sleep and diet on depression risk.
+
+These regression findings complement the machine learning results, reinforcing the importance of stress, age, and lifestyle factors as determinants of mental health outcomes.
+
 
 ## 4. Conclusion
 
-Stacked ensemble learning methods achieve high predictive performance in classifying depression from survey data. Stress-related variables, age, occupational/academic context, and lifestyle factors (sleep, diet) are key determinants. These insights support the potential of predictive models as early screening tools while underscoring the need for expert clinical judgment.
+Stacked ensemble learning methods achieve high predictive performance in classifying depression from survey data. Stress-related variables, age, occupational/academic context, and lifestyle factors (sleep, diet) are key determinants. Logistic regression confirms these relationships, offering interpretable evidence for policy and intervention strategies.
 
----
 
 ## 5. Limitations
 
-* Target encoding applied outside cross-validation folds may cause data leakage.
-* Recall can be further optimized via threshold tuning, PR-AUC maximization, or cost-sensitive methods.
-* Fairness and bias assessments are needed prior to deployment.
+1. Target encoding applied outside cross-validation folds may cause data leakage.
+2. Recall can be further optimized via threshold tuning, PR-AUC maximization, or cost-sensitive methods.
+3. Fairness and bias assessments are needed prior to deployment.
 
----
 
 ## 6. Future Work
 
-* Incorporate target encoding strictly within cross-validation folds.
-* Conduct hyperparameter optimization (Optuna).
-* Apply calibration to improve recall.
-* Perform fairness and subgroup performance analysis.
-* Build an interactive dashboard (e.g., Streamlit).
+1. Integrate target encoding strictly within cross-validation folds.
+2. Apply automated hyperparameter optimization (Optuna).
+3. Explore calibration methods to improve recall.
+4. Perform fairness and subgroup analysis.
+5. Build an interactive dashboard (e.g., Streamlit).
 
----
 
-## 7. Citation
+## 7. Policy Implications
 
-Kim, E. (2025). *Mental Health ML Prediction (Datathon).* GitHub Repository.
+The results of this analysis, combining machine learning and regression methods, provide several implications for public health policy and intervention design:
 
+### 7.1 Stress Management as a Central Policy Priority
+
+* **Work and Academic Pressure**: Strong positive associations with depression highlight the need for institutional policies addressing workload, performance pressure, and academic stress.
+* **Financial Stress**: Consistently significant in both ML and regression results, pointing to the importance of socioeconomic support programmes, debt management counselling, and targeted subsidies.
+
+### 7.2 Protective Lifestyle Interventions
+
+* **Sleep and Diet**: Adequate sleep and healthy dietary categories are protective factors. Policies promoting sleep hygiene education, school/work schedule reform, and affordable nutrition access can contribute to improved mental health outcomes.
+* **Interaction Effects**: The combined effect of poor sleep and unhealthy diet significantly raises depression risk, indicating that integrated lifestyle interventions may be more effective than siloed programmes.
+
+### 7.3 Demographic Targeting for Early Screening
+
+* **Age and Student Status**: Younger populations and students are at higher risk. Universities and secondary education institutions should integrate preventive screening tools and mental health counselling into existing structures.
+* **Gender and Profession**: Differences across gender and occupational roles suggest tailoring outreach and workplace programmes.
+
+### 7.4 Use of Predictive Models in Policy Context
+
+* **Screening Tool**: While not a replacement for clinical assessment, predictive models could be used as **low-cost triage tools** to identify high-risk individuals for referral.
+* **Data-Driven Prioritisation**: Governments and institutions can use such models to prioritise resources where the predicted burden is highest (e.g., student populations, financially stressed households).
+
+### 7.5 Fairness, Ethics, and Responsible AI
+
+* **Bias and Subgroup Fairness**: Predictive models must undergo fairness audits to avoid exacerbating disparities across socioeconomic or demographic groups.
+* **Responsible Deployment**: Deployment should follow international guidelines (WHO, OECD) on AI ethics in health, ensuring transparency, accountability, and explainability.
+
+### 7.6 Integration with National Health Systems
+
+* **Digital Health Strategies**: Predictive analytics could be integrated into electronic health records (EHRs) to flag potential mental health risks early.
+* **Policy Alignment**: Findings align with broader global health strategies such as the WHO Mental Health Action Plan and Sustainable Development Goals (SDGs), supporting early intervention and prevention.
+
+
+## 8. Provenance and Acknowledgment
+
+This analysis was originally conducted as part of the **Datathon within the Data Science Programme at Modulabs** in a **team-based effort**. The initial version of the notebook reflects the collaborative contributions of the team and remains available for reference.
+
+The **current refined version** has been updated and extended by the author for inclusion in the professional **portfolio submission**. Enhancements include methodological improvements, expanded interpretation, and alignment with academic/reporting standards. This ensures recognition of the **team collaboration** while clarifying the author’s **individual contributions** in the final version.
+
+
+## 9. Citation
+
+Kim, Y. (2025). *Mental Health ML Prediction (Datathon).* GitHub Repository.
