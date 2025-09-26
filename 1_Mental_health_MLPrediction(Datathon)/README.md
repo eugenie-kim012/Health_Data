@@ -8,7 +8,7 @@ This study applies machine learning techniques to predict depression using a lar
 
 ### 2.1 Data
 
-* **Source**: Kaggle Playground Series S4E11 (Train: 140,700; Test: 93,800).
+* **Source**: Kaggle Playground Series S4E11 (Train: 140,700; Test: 93,800), URL: https://www.kaggle.com/competitions/playground-series-s4e11
 * **Target Variable**: Depression (binary: 1 = Depressed, 0 = Not Depressed).
 * **Class Distribution**: ~18.17% positive.
 
