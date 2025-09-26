@@ -153,9 +153,7 @@ The results of this analysis, combining machine learning and regression methods,
 
 ## 8. Provenance and Acknowledgment
 
-This analysis was originally conducted as part of the Datathon within the Data Science Programme at Modulabs in a team-based effort. The initial version of the notebook reflects the collaborative contributions of the team and remains available for reference.
-
-The current refined version has been updated and extended by the author for inclusion in the professional portfolio submission. Enhancements include methodological improvements, expanded interpretation, and alignment with academic/reporting standards. This ensures recognition of the team collaboration while clarifying the author’s individual contributions in the final version.
+This analysis was originally conducted as part of the Datathon within the Data Science Programme at Modulabs in a team-based effort. The current refined version has been updated and extended by the author for inclusion in the professional portfolio submission. Enhancements include methodological improvements, expanded interpretation, and alignment with academic/reporting standards. This ensures recognition of the team collaboration while clarifying the author’s individual contributions in the final version.
 
 
 ## 9. Citation
