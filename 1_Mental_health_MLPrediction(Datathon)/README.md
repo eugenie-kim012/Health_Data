@@ -38,7 +38,9 @@ This study applies machine learning techniques to predict depression using a lar
 ### 3.1 Predictive Performance
 
 * **5-Fold CV (Stacking)**: Accuracy = 0.9414 ± 0.0015.
-* <img width="417" height="247" alt="image" src="https://github.com/user-attachments/assets/208a6240-b852-41b5-8d79-e6d16b0e8fac" />
+
+
+<img width="417" height="247" alt="image" src="https://github.com/user-attachments/assets/208a6240-b852-41b5-8d79-e6d16b0e8fac" />
 
 
 ### 3.2 Validation Set (Final Submission)
@@ -70,6 +72,7 @@ This study applies machine learning techniques to predict depression using a lar
 ### 3.3 Feature Importance (CatBoost)
 
 The top 20 features influencing predictions are summarized below. Variables such as Age, Gender (Male), Profession, Work/Study Hours, Performance Pressure, Degree, and Population Density** rank highest in importance, with lifestyle and contextual features (e.g., Sleep Hours, Dietary Category, Green Space) also contributing meaningfully.
+
 
 <img width="509" height="407" alt="image" src="https://github.com/user-attachments/assets/cecbdef7-2046-4a28-b9f0-3ded9529a5b2" />
 
@@ -137,15 +140,12 @@ The results of this analysis, combining machine learning and regression methods,
 * **Screening Tool**: While not a replacement for clinical assessment, predictive models could be used as low-cost triage tools to identify high-risk individuals for referral.
 * **Data-Driven Prioritisation**: Governments and institutions can use such models to prioritise resources where the predicted burden is highest (e.g., student populations, financially stressed households).
 
-### 7.5 Fairness, Ethics, and Responsible AI
-
-* **Bias and Subgroup Fairness**: Predictive models must undergo fairness audits to avoid exacerbating disparities across socioeconomic or demographic groups.
-* **Responsible Deployment**: Deployment should follow international guidelines (WHO, OECD) on AI ethics in health, ensuring transparency, accountability, and explainability.
-
-### 7.6 Integration with National Health Systems
+### 7.7 Integration with National Health Systems
 
 * **Digital Health Strategies**: Predictive analytics could be integrated into electronic health records (EHRs) to flag potential mental health risks early.
 * **Policy Alignment**: Findings align with broader global health strategies such as the WHO Mental Health Action Plan and Sustainable Development Goals (SDGs), supporting early intervention and prevention.
+
+
 
 <img width="589" height="487" alt="image" src="https://github.com/user-attachments/assets/1a25401d-1ad4-4f7e-b27d-650887153ad5" />
 
