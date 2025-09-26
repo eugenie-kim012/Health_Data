@@ -2,7 +2,7 @@
 
 ## 0. Research Motivation
 
-Depression poses a significant global health and socioeconomic burden. Early detection of risk factors is essential for shaping preventive measures and guiding resource allocation. This project applies advanced machine learning and econometric techniques to a large-scale survey dataset, showcasing how modern analytical methods can yield both predictive insights and interpretable findings relevant for public health policy.
+Depression poses a significant global health and socioeconomic burden. Early detection of risk factors is essential for shaping preventive measures and guiding resource allocation. This project applies advanced machine learning and econometric techniques to a large-scale survey dataset, showcasing how modern analytical methods can yield both predictive insights and interpretable findings relevant for health policy.
 
 ## 1. Research Questions
 
