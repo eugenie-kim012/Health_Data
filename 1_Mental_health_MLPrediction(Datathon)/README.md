@@ -107,60 +107,58 @@ Logistic regression was conducted to provide interpretable insights into the rel
 These regression findings complement the machine learning results, reinforcing the importance of stress, age, and lifestyle factors as determinants of mental health outcomes.
 
 
-## 5 Conclusion
+## 5. Policy Implications
+
+The results of this analysis, combining machine learning and regression methods, provide several implications for public health policy and intervention design:
+
+### 5.1 Stress Management as a Central Policy Priority
+
+* **Work and Academic Pressure**: Strong positive associations with depression highlight the need for institutional policies addressing workload, performance pressure, and academic stress.
+* **Financial Stress**: Consistently significant in both ML and regression results, pointing to the importance of socioeconomic support programmes, debt management counselling, and targeted subsidies.
+
+### 5.2 Protective Lifestyle Interventions
+
+* **Sleep and Diet**: Adequate sleep and healthy dietary categories are protective factors. Policies promoting sleep hygiene education, school/work schedule reform, and affordable nutrition access can contribute to improved mental health outcomes.
+* **Interaction Effects**: The combined effect of poor sleep and unhealthy diet significantly raises depression risk, indicating that integrated lifestyle interventions may be more effective than siloed programmes.
+
+### 5.3 Demographic Targeting for Early Screening
+
+* **Age and Student Status**: Younger populations and students are at higher risk. Universities and secondary education institutions should integrate preventive screening tools and mental health counselling into existing structures.
+* **Gender and Profession**: Differences across gender and occupational roles suggest tailoring outreach and workplace programmes.
+
+### 5.4 Use of Predictive Models in Policy Context
+
+* **Screening Tool**: While not a replacement for clinical assessment, predictive models could be used as low-cost triage tools to identify high-risk individuals for referral.
+* **Data-Driven Prioritisation**: Governments and institutions can use such models to prioritise resources where the predicted burden is highest (e.g., student populations, financially stressed households).
+
+### 5.5 Integration with National Health Systems
+
+* **Digital Health Strategies**: Predictive analytics could be integrated into electronic health records (EHRs) to flag potential mental health risks early.
+* **Policy Alignment**: Findings align with broader global health strategies such as the WHO Mental Health Action Plan and Sustainable Development Goals (SDGs), supporting early intervention and prevention.
+
+
+<img width="589" height="487" alt="image" src="https://github.com/user-attachments/assets/1a25401d-1ad4-4f7e-b27d-650887153ad5" />
+
+
+## 6. Conclusion
 
 Stacked ensemble learning methods achieve high predictive performance in classifying depression from survey data. Stress-related variables, age, occupational/academic context, and lifestyle factors (sleep, diet) are key determinants. Logistic regression confirms these relationships, offering interpretable evidence for policy and intervention strategies.
 
 
-## 6. Limitations
+## 7. Limitations
 
 1. Target encoding applied outside cross-validation folds may cause data leakage.
 2. Recall can be further optimized via threshold tuning, PR-AUC maximization, or cost-sensitive methods.
 3. Fairness and bias assessments are needed prior to deployment.
 
 
-## 7. Future Work
+## 8. Future Work
 
 1. Integrate target encoding strictly within cross-validation folds.
 2. Apply automated hyperparameter optimization (Optuna).
 3. Explore calibration methods to improve recall.
 4. Perform fairness and subgroup analysis.
 5. Build an interactive dashboard (e.g., Streamlit).
-
-
-## 8. Policy Implications
-
-The results of this analysis, combining machine learning and regression methods, provide several implications for public health policy and intervention design:
-
-### 8.1 Stress Management as a Central Policy Priority
-
-* **Work and Academic Pressure**: Strong positive associations with depression highlight the need for institutional policies addressing workload, performance pressure, and academic stress.
-* **Financial Stress**: Consistently significant in both ML and regression results, pointing to the importance of socioeconomic support programmes, debt management counselling, and targeted subsidies.
-
-### 8.2 Protective Lifestyle Interventions
-
-* **Sleep and Diet**: Adequate sleep and healthy dietary categories are protective factors. Policies promoting sleep hygiene education, school/work schedule reform, and affordable nutrition access can contribute to improved mental health outcomes.
-* **Interaction Effects**: The combined effect of poor sleep and unhealthy diet significantly raises depression risk, indicating that integrated lifestyle interventions may be more effective than siloed programmes.
-
-### 8.3 Demographic Targeting for Early Screening
-
-* **Age and Student Status**: Younger populations and students are at higher risk. Universities and secondary education institutions should integrate preventive screening tools and mental health counselling into existing structures.
-* **Gender and Profession**: Differences across gender and occupational roles suggest tailoring outreach and workplace programmes.
-
-### 8.4 Use of Predictive Models in Policy Context
-
-* **Screening Tool**: While not a replacement for clinical assessment, predictive models could be used as low-cost triage tools to identify high-risk individuals for referral.
-* **Data-Driven Prioritisation**: Governments and institutions can use such models to prioritise resources where the predicted burden is highest (e.g., student populations, financially stressed households).
-
-### 8.5 Integration with National Health Systems
-
-* **Digital Health Strategies**: Predictive analytics could be integrated into electronic health records (EHRs) to flag potential mental health risks early.
-* **Policy Alignment**: Findings align with broader global health strategies such as the WHO Mental Health Action Plan and Sustainable Development Goals (SDGs), supporting early intervention and prevention.
-
-
-
-<img width="589" height="487" alt="image" src="https://github.com/user-attachments/assets/1a25401d-1ad4-4f7e-b27d-650887153ad5" />
-
 
 
 ## 9. Provenance and Acknowledgment
