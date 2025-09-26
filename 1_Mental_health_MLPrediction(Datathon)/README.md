@@ -2,7 +2,7 @@
 
 ## 1. Abstract
 
-This study applies machine learning techniques to predict depression using a large-scale survey dataset. The primary goal is to identify key sociodemographic, lifestyle, and psychosocial factors influencing mental health while evaluating the predictive performance of different models. Results show that ensemble approaches achieve superior accuracy and highlight important risk and protective factors, with implications for early screening and policy interventions.
+This analysis applies machine learning techniques to predict depression using a large-scale survey dataset. The primary goal is to identify key sociodemographic, lifestyle, and psychosocial factors influencing mental health while evaluating the predictive performance of different models. Results show that ensemble approaches achieve superior accuracy and highlight important risk and protective factors, with implications for early screening and policy interventions.
 
 ## 2. Methods
 
