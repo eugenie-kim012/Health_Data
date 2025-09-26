@@ -50,7 +50,7 @@ This study applies machine learning techniques to predict depression using a lar
 
 **Overall Metrics:**
 
-* Accuracy: **0.94** (28,140 samples)
+* Accuracy: 0.94 (28,140 samples)
 * Macro Average: Precision = 0.90, Recall = 0.88, F1 = 0.89
 * Weighted Average: Precision = 0.94, Recall = 0.94, F1 = 0.94
 
@@ -67,15 +67,16 @@ This study applies machine learning techniques to predict depression using a lar
 
 ### 3.3 Feature Importance (CatBoost)
 
-The top 20 features influencing predictions are summarized below. Variables such as **Age, Gender (Male), Profession, Work/Study Hours, Performance Pressure, Degree, and Population Density** rank highest in importance, with lifestyle and contextual features (e.g., Sleep Hours, Dietary Category, Green Space) also contributing meaningfully.
+The top 20 features influencing predictions are summarized below. Variables such as Age, Gender (Male), Profession, Work/Study Hours, Performance Pressure, Degree, and Population Density** rank highest in importance, with lifestyle and contextual features (e.g., Sleep Hours, Dietary Category, Green Space) also contributing meaningfully.
 
-![Top 20 Feature Importances](file-Uyi8Cd4NxKw5k6du1KsFvy)
+<img width="509" height="407" alt="image" src="https://github.com/user-attachments/assets/cecbdef7-2046-4a28-b9f0-3ded9529a5b2" />
+
 
 ### 3.4 ROC Curve (Stacking Ensemble)
 
 The ROC curve illustrates the strong discriminative ability of the stacking model, with an area under the curve exceeding 0.97, reflecting excellent separation between positive and negative classes.
 
-![ROC Curve (Stacking Ensemble)](file-7AdvRMYE2D33V1L7qJiAFU)
+<img width="248" height="199" alt="image" src="https://github.com/user-attachments/assets/759764a9-553c-4179-8d96-f1422d8c765a" />
 
 ### 3.5 Logistic Regression Analysis
 
@@ -131,7 +132,7 @@ The results of this analysis, combining machine learning and regression methods,
 
 ### 7.4 Use of Predictive Models in Policy Context
 
-* **Screening Tool**: While not a replacement for clinical assessment, predictive models could be used as **low-cost triage tools** to identify high-risk individuals for referral.
+* **Screening Tool**: While not a replacement for clinical assessment, predictive models could be used as low-cost triage tools to identify high-risk individuals for referral.
 * **Data-Driven Prioritisation**: Governments and institutions can use such models to prioritise resources where the predicted burden is highest (e.g., student populations, financially stressed households).
 
 ### 7.5 Fairness, Ethics, and Responsible AI
@@ -147,11 +148,11 @@ The results of this analysis, combining machine learning and regression methods,
 
 ## 8. Provenance and Acknowledgment
 
-This analysis was originally conducted as part of the **Datathon within the Data Science Programme at Modulabs** in a **team-based effort**. The initial version of the notebook reflects the collaborative contributions of the team and remains available for reference.
+This analysis was originally conducted as part of the Datathon within the Data Science Programme at Modulabs in a team-based effort. The initial version of the notebook reflects the collaborative contributions of the team and remains available for reference.
 
-The **current refined version** has been updated and extended by the author for inclusion in the professional **portfolio submission**. Enhancements include methodological improvements, expanded interpretation, and alignment with academic/reporting standards. This ensures recognition of the **team collaboration** while clarifying the author’s **individual contributions** in the final version.
+The current refined version has been updated and extended by the author for inclusion in the professional portfolio submission. Enhancements include methodological improvements, expanded interpretation, and alignment with academic/reporting standards. This ensures recognition of the team collaboration while clarifying the author’s individual contributions in the final version.
 
 
 ## 9. Citation
 
-Kim, Y. (2025). *Mental Health ML Prediction (Datathon).* GitHub Repository.
+Kim, Y. (2025). Mental Health ML Prediction (Datathon). GitHub Repository.
