@@ -1,4 +1,4 @@
-# ⭐⭐ Eugenie's Health Data Analysis Portfolio 
+# ⭐⭐ Eugenie's Health Data Analysis Portfolio  ⭐⭐
 
 This repository showcases practical applications of data science in global health, ranging from LLM-based drug discovery to interactive WHO dashboards. These projects were developed both independently and collaboratively through a data science bootcamp program. Please note that using [GEMINI API](https://ai.google.dev/gemini-api/docs/api-key?hl=ko) provides accessible LLM protocols within free usage limits for experimentation.
 
