@@ -2,7 +2,7 @@
 
 ## 0. Research Motivation
 
-Depression is a pressing public health concern, with significant socioeconomic and personal consequences. Early identification of risk factors can inform prevention and intervention strategies. This project investigates whether machine learning and statistical modeling can improve the prediction of depression outcomes using large-scale survey data.
+Depression poses a significant global health and socioeconomic burden. Early detection of risk factors is essential for shaping preventive measures and guiding resource allocation. This project applies advanced machine learning and econometric techniques to a large-scale survey dataset, showcasing how modern analytical methods can yield both predictive insights and interpretable findings relevant for public health policy.
 
 ## 1. Research Questions
 
