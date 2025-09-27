@@ -1,8 +1,8 @@
-# 📑 Health Expenditure, Employment Vulnerability, and Education Outcomes  
+# 📑 Employment Vulnerability, Health Expenditure, and Education Outcomes  
 *An Empirical Analysis Using World Development Indicators (WDI)*
 
 ## Abstract
-This project explores the relationship between **health expenditure**, **employment vulnerability**, and **tertiary education outcomes** using panel data from the World Bank’s *World Development Indicators (WDI)*. Covering up to 19 countries over 11 years, the analysis applies both **cross-sectional OLS** and **panel fixed-effects estimation** to assess whether changes in health spending are associated with shifts in labor market vulnerability and higher education outcomes.  
+This project explores the relationship between **employment vulnerability**, **health expenditure**, and **tertiary education outcomes** using panel data from the World Bank’s *World Development Indicators (WDI)*. Covering up to 19 countries over 11 years, the analysis applies both **cross-sectional OLS** and **panel fixed-effects estimation** to assess whether changes in health spending are associated with shifts in labor market vulnerability and higher education outcomes.  
 
 The findings highlight the **limited explanatory power** of aggregate expenditure measures in the short run, underscoring the importance of structural and institutional factors in health–education–labor linkages.
 
@@ -57,7 +57,7 @@ The findings highlight the **limited explanatory power** of aggregate expenditur
 
 ---
 
-## Results (Updated)
+## Results
 
 | Model                               | Main Coefficients (ΔHealthExp / GovExp) | Robust SE | p-value | R² (within / overall) | Interpretation |
 | ----------------------------------- | ---------------------------------------- | --------- | ------- | --------------------- | --------------- |
