@@ -35,10 +35,9 @@ The findings highlight the **limited explanatory power** of aggregate expenditur
 2. **Visualization**  
    - Time-series line charts (cross-country health and education spending trends).  
    - Scatter plots linking expenditure to vulnerable employment. 
+
   
-
-<img width="1160" height="514" alt="image" src="https://github.com/user-attachments/assets/7126fdbe-4345-4e66-8b85-af90c6daeeec" />
-
+<img width="1216" height="497" alt="image" src="https://github.com/user-attachments/assets/eea5dcc4-164c-4bc5-be59-7ea150388ece" />
 
 <img width="1034" height="446" alt="image" src="https://github.com/user-attachments/assets/f0614a83-7a6e-493c-ab68-ea9f4401f123" />
 
