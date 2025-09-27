@@ -1,6 +1,6 @@
-# 🌍 WDI Health & Education Analysis
+# 🌍 WDI Employment, Health & Education Analysis
 
-This project analyzes the relationship between **health expenditure, vulnerable employment, and education outcomes** using the World Bank’s **World Development Indicators (WDI)** dataset.  
+This project analyzes the relationship between **health expenditure, vulnerable employment, and education outcomes** using **World Development Indicators (WDI)** dataset.  
 
 ## 📌 Overview
 - **Goal**: To explore how health spending (total and government) relates to **vulnerable employment** and **tertiary education outcomes** across countries.  
@@ -79,7 +79,3 @@ The analysis highlights the **limited short-term explanatory power** of aggregat
 - **Libraries**: `pandas`, `plotly`, `statsmodels`, `linearmodels`  
 - **Data**: World Development Indicators (World Bank, 2025 release)  
 - **Notebook**: `WDI_V3.ipynb`  
-
-## Citation
-World Bank. *World Development Indicators*. Washington, D.C.: World Bank Group.  
-
