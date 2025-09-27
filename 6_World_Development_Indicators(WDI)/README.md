@@ -1,4 +1,3 @@
-
 # 📑 Health Expenditure, Employment Vulnerability, and Education Outcomes  
 *An Empirical Analysis Using World Development Indicators (WDI)*
 
@@ -13,7 +12,7 @@ The findings highlight the **limited explanatory power** of aggregate expenditur
 3. How do these relationships hold under **panel fixed-effects estimation** that controls for unobserved heterogeneity across countries and years?
 
 ## Data
-**Source**: https://www.kaggle.com/datasets/parsabahramsari/wdi-education-health-and-employment-2011-2021
+**Source**: [Kaggle WDI dataset](https://www.kaggle.com/datasets/parsabahramsari/wdi-education-health-and-employment-2011-2021)
 
 - **Health Expenditure**  
   - Current health expenditure (% of GDP) — `SH.XPD.CHEX.GD.ZS`  
@@ -35,7 +34,7 @@ The findings highlight the **limited explanatory power** of aggregate expenditur
 
 2. **Visualization**  
    - Time-series line charts (cross-country health and education spending trends).  
-   - Scatter plots linking expenditure to vulnerable employment.
+   - Scatter plots linking expenditure to vulnerable employment. 
   
 
 <img width="1160" height="514" alt="image" src="https://github.com/user-attachments/assets/7126fdbe-4345-4e66-8b85-af90c6daeeec" />
@@ -56,16 +55,18 @@ The findings highlight the **limited explanatory power** of aggregate expenditur
    - **Panel Fixed Effects (Entity + Time, Clustered SE)**: Controlling for unobserved heterogeneity across countries and years.  
    - Robust SE (HC3) for heteroscedasticity.  
 
+---
 
-## Results
+## Results (Updated)
 
-| Model                               | Findings                                                                 |
-| ----------------------------------- | ------------------------------------------------------------------------ |
-| **ΔTertiaryExpShare (OLS)**         | Health spending changes not significant; R² ≈ 0.06.                       |
-| **ΔBA+ Attainment (OLS)**           | Coefficients not significant; R² ≈ 0.12.                                 |
-| **VulnerableEmployment (Panel FE)** | Avg. ≈ 12%; no significant link with health spending (robust SE confirms).|
-| **TertiaryExpShare (Panel FE)**     | Very low explanatory power; model not significant.                        |
+| Model                               | Main Coefficients (ΔHealthExp / GovExp) | Robust SE | p-value | R² (within / overall) | Interpretation |
+| ----------------------------------- | ---------------------------------------- | --------- | ------- | --------------------- | --------------- |
+| **ΔTertiaryExpShare (OLS, 2019–21)** | β₁≈0.01, β₂≈-0.02                        | ~0.04–0.05 | 0.86    | R²=0.06               | Not significant |
+| **ΔBA+ Attainment (OLS, 2019–21)**  | β₁≈-0.03, β₂≈0.01                        | ~0.05     | 0.34    | R²=0.12               | Not significant |
+| **VulnerableEmployment (Panel FE)** | β₁≈-0.04, β₂≈+0.02                       | ~0.09     | 0.62    | Within=0.13 / Overall=0.03 | Weak fit, not robust |
+| **TertiaryExpShare (Panel FE)**     | β₁≈0.01, β₂≈-0.01                        | ~0.03     | 0.87    | Within=0.01 / Overall=-0.47 | Very low explanatory power |
 
+---
 
 ## Interpretation
 - Health expenditure (both total and government share) shows **no consistent short-term impact** on employment vulnerability or tertiary education.  
@@ -77,8 +78,9 @@ The findings highlight the **limited explanatory power** of aggregate expenditur
 - **Research**: Future studies should include **lagged effects**, **education expenditure disaggregation**, and **causal designs** (IV, DiD).  
 - **Portfolio relevance**: This project demonstrates applied skills in **data cleaning, visualization, and panel econometrics** for health economics and education research.
 
-
-## Technical Details
-- **Language**: Python  
-- **Libraries**: `pandas`, `plotly`, `statsmodels`, `linearmodels`  
-- **Notebook**: `WDI_V3.ipynb`  
+## Limitations
+- Aggregate indicators may mask heterogeneity across regions, policy regimes, and institutional quality.  
+- Potential **endogeneity** between health and education spending not addressed here.  
+- Short panel (2011–2021) limits ability to capture long-term lagged effects.  
+- Future extensions: Instrumental Variables (IV), panel ARDL, or natural experiments (DiD).
+  
