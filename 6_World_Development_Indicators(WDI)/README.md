@@ -37,7 +37,7 @@ The findings highlight the **limited explanatory power** of aggregate expenditur
    - Scatter plots linking expenditure to vulnerable employment. 
 
   
-<img width="1216" height="497" alt="image" src="https://github.com/user-attachments/assets/eea5dcc4-164c-4bc5-be59-7ea150388ece" />
+<img width="970" height="399" alt="image" src="https://github.com/user-attachments/assets/dbb51e72-e95c-4080-b478-aee35a1d9b78" />
 
 <img width="1034" height="446" alt="image" src="https://github.com/user-attachments/assets/f0614a83-7a6e-493c-ab68-ea9f4401f123" />
 
