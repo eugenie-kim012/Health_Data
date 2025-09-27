@@ -168,4 +168,4 @@ This analysis was originally conducted as part of the Datathon within the Data S
 
 ## 9. Citation
 
-Kim, Y. (2025). Mental Health ML Prediction (Datathon). GitHub Repository.
+Kim, E. (2025). Mental Health ML Prediction (Datathon). GitHub Repository.
