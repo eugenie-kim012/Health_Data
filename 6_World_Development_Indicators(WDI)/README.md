@@ -68,7 +68,7 @@ The analysis highlights the **limited short-term explanatory power** of aggregat
 - While intuitive links between public spending, employment security, and education are often assumed, this dataset demonstrates the **limitations of using aggregate WDI indicators for causal inference**.
 
 
-<img width="1017" height="446" alt="image" src="https://github.com/user-attachments/assets/e80ad07f-0321-453b-91a0-e8007e1558ce" />
+<img width="1160" height="514" alt="image" src="https://github.com/user-attachments/assets/7126fdbe-4345-4e66-8b85-af90c6daeeec" />
 
 
 <img width="1034" height="446" alt="image" src="https://github.com/user-attachments/assets/f0614a83-7a6e-493c-ab68-ea9f4401f123" />
