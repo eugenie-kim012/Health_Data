@@ -8,8 +8,6 @@ This project analyzes the relationship between **health expenditure, vulnerable 
 - **Scope**: 19 countries × 11 years (panel data).  
 - **Data**: https://www.kaggle.com/datasets/parsabahramsari/wdi-education-health-and-employment-2011-2021/code
 
-# 📑 Health Expenditure, Employment Vulnerability, and Education Outcomes: An Empirical Analysis Using WDI
-
 
 ## Abstract
 This study investigates the relationship between **health expenditure**, **employment vulnerability**, and **tertiary education outcomes** using panel data from the World Bank’s *World Development Indicators (WDI)*.  
