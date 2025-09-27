@@ -1,4 +1,4 @@
-# Mental Health ML Prediction (Datathon)
+# 🧠 Mental Health ML Prediction (Datathon)
 
 ## 0. Research Motivation
 
