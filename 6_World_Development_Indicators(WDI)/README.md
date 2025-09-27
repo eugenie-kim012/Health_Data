@@ -8,39 +8,78 @@ This project analyzes the relationship between **health expenditure, vulnerable 
 - **Scope**: 19 countries × 11 years (panel data).  
 - **Data**: https://www.kaggle.com/datasets/parsabahramsari/wdi-education-health-and-employment-2011-2021/code
 
-## 📊 Key Indicators
-- **HealthExpenditure (% of GDP)** → `SH.XPD.CHEX.GD.ZS`  
-- **Government HealthExpenditure (% of GDP)** → `SH.XPD.GHED.GD.ZS`  
-- **Vulnerable Employment (% of total employment)** → `SL.EMP.VULN.ZS`  
-- **Unemployment (total, youth)** → `SL.UEM.TOTL.ZS`, `SL.UEM.1524.ZS`  
-- **Tertiary Education Share** → `SE.XPD.CTER.ZS`  
-- **BA+ Attainment (25+, %)** → `SE.TER.CUAT.BA.ZS`  
+# 📑 Health Expenditure, Employment Vulnerability, and Education Outcomes: An Empirical Analysis Using WDI
 
-## 🔎 Methods
-1. **Data Cleaning & Winsorization**  
-   - Converted to numeric, handled missing values.  
-   - Winsorized (1%–99%) to reduce outlier impact.  
 
-2. **Visualization (Plotly)**  
-   - Line charts for country-level health & education trends.  
-   - Scatter plots for cross-country correlations.  
+## Abstract
+This study investigates the relationship between **health expenditure**, **employment vulnerability**, and **tertiary education outcomes** using panel data from the World Bank’s *World Development Indicators (WDI)*.  
 
-3. **Regression Analysis**  
-   - **OLS** on cross-period differences (Δ2019–2021).  
-   - **Panel OLS with Fixed Effects** (Entity + Time, clustered SE).  
-   - Robust standard errors applied (HC3).  
+We focus on 19 countries over 11 years, applying both **cross-sectional regression (OLS)** and **panel fixed-effects estimation** to explore whether changes in health spending are associated with improvements in employment or education outcomes.  
 
-## 📈 Results (Summary)
+The analysis highlights the **limited short-term explanatory power** of aggregated health expenditure indicators, while suggesting directions for future empirical research in health economics and education policy.
 
-| Model                              | Findings                                                                                   |
-| ---------------------------------- | ------------------------------------------------------------------------------------------ |
-| **OLS (ΔTertiaryExpShare)**        | Health expenditure changes **not significantly related** to tertiary spending share (R²=0.06). |
-| **OLS (ΔBA+ Attainment)**          | Weak, non-significant link between health spending and BA+ attainment (R²=0.12).              |
-| **Panel FE (VulnerableEmployment)**| Average ~12% vulnerable employment; **no significant effect** of health expenditure.          |
-| **Panel FE (TertiaryExpShare)**    | Very low explanatory power (R² < 0.02), model not significant.                               |
+## Research Questions
+1. Does an increase in health expenditure (% of GDP) reduce **vulnerable employment**?  
+2. Is there a measurable link between **health spending** and **tertiary education investment or attainment (BA+ share)**?  
+3. How do these relationships hold under **panel fixed-effects estimation** that controls for country- and year-specific unobserved heterogeneity?  
 
-## 📝 Interpretation
-- **No clear short-term relationship** between health expenditure and higher education outcomes.  
-- **Vulnerable employment** remains high (~12%) but is **not significantly explained** by health spending shares.  
-- Highlights the **limitations of short time windows and aggregated indicators**.  
-- Suggests the need for **longer-term data** and additional controls (e.g., education spending, institutional factors).  
+## Data and Variables
+**Source**: World Development Indicators (World Bank, 2025 release)  
+
+- **Health expenditure**:  
+  - Current health expenditure (% of GDP) — `SH.XPD.CHEX.GD.ZS`  
+  - Domestic government health expenditure (% of GDP) — `SH.XPD.GHED.GD.ZS`  
+
+- **Employment**:  
+  - Vulnerable employment (% of total employment) — `SL.EMP.VULN.ZS`  
+  - Unemployment, total (% of labor force) — `SL.UEM.TOTL.ZS`  
+  - Unemployment, youth (% of youth labor force) — `SL.UEM.1524.ZS`  
+
+- **Education**:  
+  - Tertiary expenditure share (% of public education expenditure) — `SE.XPD.CTER.ZS`  
+  - BA+ attainment (population 25+, %) — `SE.TER.CUAT.BA.ZS`  
+
+## Methodology
+1. **Preprocessing**
+   - Converted indicators to numeric form, addressed missing values.  
+   - Applied *winsorization* (1%–99%) to mitigate the influence of outliers.  
+
+2. **Visualization**
+   - Cross-country line charts (health and education spending over time).  
+   - Scatter plots (health expenditure vs. employment vulnerability).  
+
+3. **Econometric Analysis**
+   - **OLS on first differences (Δ2019–2021)**:  
+     Models short-term changes in tertiary outcomes relative to changes in health spending.  
+   - **Panel OLS with fixed effects (entity + time)**:  
+     Accounts for country-specific and year-specific unobservables.  
+   - Robust standard errors (HC3) applied.  
+
+## Results
+
+| Model                               | Findings                                                                                           |
+| ----------------------------------- | -------------------------------------------------------------------------------------------------- |
+| **ΔTertiaryExpShare (OLS)**         | Health spending changes **not significant**; R² = 0.06.                                             |
+| **ΔBA+ Attainment (OLS)**           | Weak, non-significant coefficients; R² = 0.12.                                                     |
+| **VulnerableEmployment (Panel FE)** | Average ≈ 12%; no significant link with health spending. Robust SE confirms lack of significance.  |
+| **TertiaryExpShare (Panel FE)**     | Explanatory power very low (Within R² = 0.01); model not significant.                              |
+
+## Interpretation
+- Health expenditure (both total and government share) shows **no consistent short-term impact** on employment vulnerability or higher education outcomes.  
+- The weak explanatory power (low R² values) indicates that **other factors (institutional, fiscal, educational)** likely mediate these relationships.  
+- While intuitive links between public spending, employment security, and education are often assumed, this dataset demonstrates the **limitations of using aggregate WDI indicators for causal inference**.  
+
+## Implications
+- **Policy**: Simply raising health expenditure may not yield immediate improvements in labor market vulnerability or tertiary education attainment.  
+- **Research**: Future work should extend the time horizon, incorporate additional variables (e.g., education expenditure disaggregation, governance quality), and explore **causal methods (IV, DiD)**.  
+- **Portfolio relevance**: This analysis demonstrates the application of **data cleaning, visualization, panel econometrics, and critical interpretation** in a health economics context.  
+
+## Technical Implementation
+- **Language**: Python  
+- **Libraries**: `pandas`, `plotly`, `statsmodels`, `linearmodels`  
+- **Data**: World Development Indicators (World Bank, 2025 release)  
+- **Notebook**: `WDI_V3.ipynb`  
+
+## Citation
+World Bank. *World Development Indicators*. Washington, D.C.: World Bank Group.  
+
