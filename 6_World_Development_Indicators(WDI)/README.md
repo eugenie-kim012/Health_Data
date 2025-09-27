@@ -65,7 +65,15 @@ The analysis highlights the **limited short-term explanatory power** of aggregat
 ## Interpretation
 - Health expenditure (both total and government share) shows **no consistent short-term impact** on employment vulnerability or higher education outcomes.  
 - The weak explanatory power (low R² values) indicates that **other factors (institutional, fiscal, educational)** likely mediate these relationships.  
-- While intuitive links between public spending, employment security, and education are often assumed, this dataset demonstrates the **limitations of using aggregate WDI indicators for causal inference**.  
+- While intuitive links between public spending, employment security, and education are often assumed, this dataset demonstrates the **limitations of using aggregate WDI indicators for causal inference**.
+
+<img width="1017" height="446" alt="image" src="https://github.com/user-attachments/assets/e80ad07f-0321-453b-91a0-e8007e1558ce" />
+
+<img width="1034" height="446" alt="image" src="https://github.com/user-attachments/assets/f0614a83-7a6e-493c-ab68-ea9f4401f123" />
+
+<img width="1034" height="432" alt="image" src="https://github.com/user-attachments/assets/c06db3ff-9998-4f4f-9fe5-ade767749cca" />
+
+<img width="1160" height="575" alt="image" src="https://github.com/user-attachments/assets/d8e8c36e-721f-4db8-b679-ac613deaf8a2" />
 
 ## Implications
 - **Policy**: Simply raising health expenditure may not yield immediate improvements in labor market vulnerability or tertiary education attainment.  
