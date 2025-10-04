@@ -4,9 +4,21 @@
 
 ## 📌 Abstract
 
-This project investigates the dynamics between **employment vulnerability, education outcomes and health expenditure** in high-income countries, using cross-country panel data from the [Kaggle WDI dataset](https://www.kaggle.com/datasets/parsabahramsari/wdi-education-health-and-employment-2011-2021) – based on the World Bank's World Development Indicators (WDI) (2011–2021). The dataset covers 19 countries over 11 years, focusing on Europe, North America, and developed Asia. 
+This project investigates the dynamics between employment vulnerability, education outcomes and health expenditure in high-income countries, using cross-country panel data from the [Kaggle WDI dataset](https://www.kaggle.com/datasets/parsabahramsari/wdi-education-health-and-employment-2011-2021) – based on the World Bank's World Development Indicators (WDI) (2011–2021). The dataset covers 19 countries over 11 years, focusing on Europe, North America, and developed Asia. 
 
-The analysis explores how levels of government health expenditure are associated with education attainment and employment statuses. The study interprets health expenditure as a form of **social protection investment**, highlighting fiscal pressures on health budgets, links between labour market vulnerability and economic performance, and long-term human capital accumulation. The objective is to demonstrate applied research skills in **data cleaning, empirical analysis, and policy-relevant interpretation**.
+The analysis explores how levels of government health expenditure are associated with education attainment and employment statuses. The study interprets health expenditure as a form of social protection investment, highlighting fiscal pressures on health budgets, links between labour market vulnerability and economic performance, and long-term human capital accumulation. The objective is to demonstrate applied research skills in data cleaning, empirical analysis, and policy-relevant interpretation.
+
+## Executive Summary (1 page)
+
+**Research Question**: How do labor market structures and education attainment correlate with government health financing in high-income 
+countries?
+
+**Key Finding**: Labor market instability (unemployment, contract work) strongly predicts higher government health expenditure share, while 
+tertiary education shows the opposite pattern.
+
+**Policy Implication**: Governments should anticipate counter-cyclical health spending pressures during economic downturns, while investigating whether education-driven changes improve health outcomes or merely shift financing burdens.
+
+**Methodological Limitation**: Causal inference is limited by potential endogeneity; future work should employ quasi-experimental designs.
 
 ---
 
