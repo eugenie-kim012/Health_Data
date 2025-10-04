@@ -108,6 +108,56 @@ This analysis examines how **labor market structures** and **education attainmen
 
 <img width="677" height="364" alt="image" src="https://github.com/user-attachments/assets/39449f0a-9f70-4740-bcc7-d5cb9b737b93" />
 
+## 📊 Two-way Fixed Effects Regression Results
+
+### 🔹 Labour Market Block
+| Variable | Coefficient | Std. Error | t-stat | p-value | 95% CI (Lower) | 95% CI (Upper) |
+|----------|-------------|------------|--------|---------|----------------|----------------|
+| JOB_Unemp_Total | 0.0661 | 0.0224 | 2.9500 | 0.0037 | 0.0218 | 0.1103 |
+| JOB_VulnerableEmployment_Total | 0.1304 | 0.1336 | 0.9756 | 0.3308 | -0.1336 | 0.3943 |
+| JOB_Part_Time_Total | 0.0208 | 0.0110 | 1.8961 | 0.0598 | -0.0009 | 0.0425 |
+| JOB_Contracters_Total | 0.2195 | 0.0942 | 2.3304 | 0.0211 | 0.0335 | 0.4055 |
+
+**Model Fit**  
+- R-squared (Within): 0.1359  
+- R-squared (Between): -2.7165  
+- R-squared (Overall): -2.4427  
+- F-statistic (robust): 192.20 (p < 0.001)  
+- Included effects: **Entity, Time**
+
+---
+
+### 🔹 Education Block (Contemporaneous)
+| Variable | Coefficient | Std. Error | t-stat | p-value | 95% CI (Lower) | 95% CI (Upper) |
+|----------|-------------|------------|--------|---------|----------------|----------------|
+| EDU_Secondary | -0.0108 | 0.0071 | -1.5091 | 0.1336 | -0.0249 | 0.0033 |
+| EDU_PostSecNonTer | -0.0264 | 0.0145 | -1.8195 | 0.0710 | -0.0550 | 0.0023 |
+| EDU_Tertiary | -0.0414 | 0.0145 | -2.8589 | 0.0049 | -0.0701 | -0.0128 |
+
+**Model Fit**  
+- R-squared (Within): -0.2374  
+- R-squared (Between): -0.6298  
+- R-squared (Overall): -0.6164  
+- F-statistic (robust): 5.0894 (p = 0.0023)  
+- Included effects: **Entity, Time**
+
+---
+
+### 🔹 Education Block (Lagged 1y)
+| Variable | Coefficient | Std. Error | t-stat | p-value | 95% CI (Lower) | 95% CI (Upper) |
+|----------|-------------|------------|--------|---------|----------------|----------------|
+| EDU_Secondary_L1 | -0.0152 | 0.0071 | -2.1381 | 0.0346 | -0.0292 | -0.0011 |
+| EDU_PostSecNonTer_L1 | -0.0057 | 0.0136 | -0.4215 | 0.6742 | -0.0327 | 0.0212 |
+| EDU_Tertiary_L1 | -0.0051 | 0.0167 | -0.3032 | 0.7623 | -0.0382 | 0.0281 |
+
+**Model Fit**  
+- R-squared (Within): 0.0136  
+- R-squared (Between): -0.2722  
+- R-squared (Overall): -0.2713  
+- F-statistic (robust): 2.0985 (p = 0.1041)  
+- Included effects: **Entity, Time**
+
+
 ## ✅ Implications
 
 ### Labour market dynamics and fiscal pressure
