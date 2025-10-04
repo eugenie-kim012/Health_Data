@@ -196,7 +196,7 @@ Labour market effects are more persistent: unemployment and contractualisation d
 
 During regression setup, variance inflation factors (VIF) were calculated to diagnose potential collinearity among indicators.
 
-**Education indicators**
+## **Education indicators**
 
 - Post-secondary ≈ 13
 
@@ -210,7 +210,7 @@ During regression setup, variance inflation factors (VIF) were calculated to dia
 
 High VIF values for cumulative indicators confirmed nested structures. Solution: decompose into exclusive categories (Primary only, Secondary, Post-secondary only, Short-cycle only, BA+), with Below Primary as baseline.
 
-**Employment indicators**
+## **Employment indicators**
 
 - Self-employed ≈ 2.5×10¹¹
 
