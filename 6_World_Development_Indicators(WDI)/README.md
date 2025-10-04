@@ -47,20 +47,16 @@ WDI-Education-Employment-EconDev/
 │
 ├── notebooks/                             # Thematic notebooks
 │   ├── 01_data_preparation.ipynb
-│   ├── 02_education_econdev_analysis.ipynb
-│   ├── 03_employment_econdev_analysis.ipynb
-│   ├── 04_health_expenditure_linkages.ipynb (optional)
-│   └── 05_summary_policy_implications.ipynb
-│
-├── data/
-│   ├── WDI_Final_Processed.csv            # Processed dataset
-│   └── (link to raw WDI source)
+│   ├── 02_health_expenditure_linkages.ipynb
+│   ├── 03_employment_expenditure.ipynb
+│   ├── 04_Education_expenditure.ipynb
+│   └── 05_Resgressions.ipynb
 │
 └── figures/
-    ├── education_econdev_scatter.png
-    ├── employment_econdev_trends.png
-    └── regression_results.png
-```
+    ├── health_expenditure_linkages.pdf
+    ├── employment_expenditure.pdf
+    ├── Education_expenditure.pdf
+    └── Resgressions.pdf
 
 ---
 
