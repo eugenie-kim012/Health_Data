@@ -192,13 +192,53 @@ Labour market effects are more persistent: unemployment and contractualisation d
 
 ---
 
+### 🔍 Multicollinearity Check
+
+During regression setup, variance inflation factors (VIF) were calculated to diagnose potential collinearity among indicators.
+
+** Education indicators **
+
+- Post-secondary ≈ 13
+
+- Short-cycle ≈ 12.8
+
+- Lower Secondary ≈ 3.1
+
+- Primary ≈ 2.6
+
+- Bachelors ≈ 1.5
+
+High VIF values for cumulative indicators confirmed nested structures. Solution: decompose into exclusive categories (Primary only, Secondary, Post-secondary only, Short-cycle only, BA+), with Below Primary as baseline.
+
+** Employment indicators **
+
+- Self-employed ≈ 2.5×10¹¹
+
+- Contractors ≈ 2.5×10¹¹
+
+- Vulnerable employment ≈ 19.8
+
+- Youth unemployment ≈ 10.2
+
+- Unemployment ≈ 10.0
+
+- Part-time ≈ 1.1
+
+Extremely high VIF values for self-employed and contractors indicate near-linear dependence. For robustness, specifications were tested with reduced sets (dropping or combining categories) to avoid unstable estimates.
+
+Suggested regrouping: In future work, employment indicators can be collapsed into broader categories (e.g. "formal vs. informal", or combining self-employed + contractors) to reduce collinearity. Exclusive grouping—similar to the education case—would improve stability and interpretation of coefficients.
+
+During regression setup, variance inflation factors (VIF) were calculated to diagnose potential collinearity among education indicators. As expected, cumulative (≥) education indicators produced high VIF values (Post-secondary ≈13, Short-cycle ≈12.8), reflecting their nested structure. To address this:
+
+Education indicators were decomposed into exclusive categories (Primary only, Secondary, Post-secondary only, Short-cycle only, BA+), with Below Primary as the baseline.
+
+This approach reduced collinearity and improved interpretability of coefficients.
+
 ## 📌 Policy Implications
 
-**Labour market shocks and fiscal response**  
-• Rising unemployment and contract-based work significantly increase the share of government health expenditure in GDP, highlighting the counter-cyclical role of public budgets.  
+Labour market shocks and fiscal response: Rising unemployment and contract-based work significantly increase the share of government health expenditure in GDP, highlighting the counter-cyclical role of public budgets.
 
-**Education-driven structural shifts**  
-• Higher tertiary education attainment is associated with a smaller government share in health financing, suggesting fiscal reallocation and stronger reliance on private sources.  
+Education-driven structural shifts: Higher tertiary education attainment is associated with a smaller government share in health financing, suggesting fiscal reallocation and stronger reliance on private sources.
 
-**Equity and sustainability**  
-• Policymakers should anticipate fiscal pressures during labour market downturns while safeguarding equity as education-driven changes reshape the balance between public and private health financing.
+Equity and sustainability: Policymakers should anticipate fiscal pressures during labour market downturns while safeguarding equity as education-driven changes reshape the balance between public and private health financing.
+
