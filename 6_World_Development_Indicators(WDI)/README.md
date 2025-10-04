@@ -136,11 +136,11 @@ Labour market effects are more persistent: unemployment and contractualisation d
 
 ## 📌 Policy Implications
 
-> **Labour market shocks and fiscal response**  
-> • Rising unemployment and contract-based work significantly increase the share of government health expenditure in GDP, highlighting the counter-cyclical role of public budgets.  
->
-> **Education-driven structural shifts**  
-> • Higher tertiary education attainment is associated with a smaller government share in health financing, suggesting fiscal reallocation and stronger reliance on private sources.  
->
-> **Equity and sustainability**  
-> • Policymakers should anticipate fiscal pressures during labour market downturns while safeguarding equity as education-driven changes reshape the balance between public and private health financing.
+**Labour market shocks and fiscal response**  
+• Rising unemployment and contract-based work significantly increase the share of government health expenditure in GDP, highlighting the counter-cyclical role of public budgets.  
+
+**Education-driven structural shifts**  
+• Higher tertiary education attainment is associated with a smaller government share in health financing, suggesting fiscal reallocation and stronger reliance on private sources.  
+
+**Equity and sustainability**  
+• Policymakers should anticipate fiscal pressures during labour market downturns while safeguarding equity as education-driven changes reshape the balance between public and private health financing.
