@@ -192,7 +192,7 @@ Labour market effects are more persistent: unemployment and contractualisation d
 
 ---
 
-### 🔍 Multicollinearity Check
+# 🔍 Multicollinearity Check
 
 During regression setup, variance inflation factors (VIF) were calculated to diagnose potential collinearity among indicators.
 
