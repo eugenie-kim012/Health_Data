@@ -84,8 +84,6 @@ WDI-Education-Employment-EconDev/
 
 ---
 
-## 📊 **Econometric Analysis**
-
 ## 📊 Two-way Fixed Effects Regression Results
 
 This analysis examines how **labor market structures** and **education attainment** are associated with government health expenditure (% of GDP), using **two-way fixed effects with Driscoll–Kraay SE**.
