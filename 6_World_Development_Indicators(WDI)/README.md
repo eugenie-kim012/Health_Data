@@ -92,18 +92,18 @@ This analysis examines how **labor market structures** and **education attainmen
 
 ### 🔹 Summary of Results
 
-| DomainExplanatory VariableCoefficient (β)p-valueInterpretation |                               |         |        |                                                                                |
-| -------------------------------------------------------------- | ----------------------------- | ------- | ------ | ------------------------------------------------------------------------------ |
-| **Labor Market**                                               | Unemployment                  | 0.0661  | 0.0037 | Higher unemployment → ↑ Gov. health expenditure share (**significant**)        |
-|                                                                | Vulnerable Employment         | 0.1304  | 0.331  | Not significant                                                                |
-|                                                                | Part-time Employment          | 0.0208  | 0.060  | Weak positive effect (10% level)                                               |
-|                                                                | Contract Employment           | 0.2195  | 0.021  | Higher contractors → ↑ Gov. health expenditure share (**significant**)         |
-| **Education (contemporaneous)**                                | Secondary                     | -0.0108 | 0.134  | Not significant                                                                |
-|                                                                | Post-secondary (non-tertiary) | -0.0264 | 0.071  | Marginal negative effect                                                       |
-|                                                                | Tertiary                      | -0.0414 | 0.0049 | Higher tertiary attainment → ↓ Gov. health expenditure share (**significant**) |
-| **Education (lagged 1y)**                                      | Secondary (t-1)               | -0.0152 | 0.035  | Significant delayed negative effect                                            |
-|                                                                | Post-secondary (t-1)          | -0.0057 | 0.674  | Not significant                                                                |
-|                                                                | Tertiary (t-1)                | -0.0051 | 0.762  | Not significant                                                                |
+| Domain                          | Explanatory Variable          | Coefficient (β) | p-value | Interpretation                                                                 |
+| ------------------------------- | ----------------------------- | --------------- | ------- | ------------------------------------------------------------------------------ |
+| **Labor Market**                | Unemployment                  | 0.0661          | 0.0037  | Higher unemployment → ↑ Gov. health expenditure share (**significant**)        |
+|                                 | Vulnerable Employment         | 0.1304          | 0.331   | Not significant                                                                |
+|                                 | Part-time Employment          | 0.0208          | 0.060   | Weak positive effect (10% level)                                               |
+|                                 | Contract Employment           | 0.2195          | 0.021   | Higher contractors → ↑ Gov. health expenditure share (**significant**)         |
+| **Education (contemporaneous)** | Secondary                     | -0.0108         | 0.134   | Not significant                                                                |
+|                                 | Post-secondary (non-tertiary) | -0.0264         | 0.071   | Marginal negative effect                                                       |
+|                                 | Tertiary                      | -0.0414         | 0.0049  | Higher tertiary attainment → ↓ Gov. health expenditure share (**significant**) |
+| **Education (lagged 1y)**       | Secondary (t-1)               | -0.0152         | 0.035   | Significant delayed negative effect                                            |
+|                                 | Post-secondary (t-1)          | -0.0057         | 0.674   | Not significant                                                                |
+|                                 | Tertiary (t-1)                | -0.0051         | 0.762   | Not significant                                                                |
 
 
 <img width="677" height="364" alt="image" src="https://github.com/user-attachments/assets/39449f0a-9f70-4740-bcc7-d5cb9b737b93" />
