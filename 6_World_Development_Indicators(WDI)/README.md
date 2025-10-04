@@ -1,98 +1,146 @@
-# 📑 Employment Vulnerability, Education Outcomes, and Health Expenditure  
+# 📊 Employment Vulnerability, Education Outcomes and Health Expenditure 
+
 *An Integrated Analysis Using World Development Indicators (WDI)*
 
-## Abstract
+## 📌 Abstract
 
-This project explores the interconnected dynamics between **employment vulnerability**, **education outcomes**, and **health expenditure** in high-income countries, using panel data from the World Bank’s *World Development Indicators (WDI)* (2011–2021) ([Kaggle WDI dataset](https://www.kaggle.com/datasets/parsabahramsari/wdi-education-health-and-employment-2011-2021)). .  
+This project investigates the dynamics between **employment vulnerability, education outcomes and health expenditure** in high-income countries, using cross-country panel data from the [Kaggle WDI dataset](https://www.kaggle.com/datasets/parsabahramsari/wdi-education-health-and-employment-2011-2021) – based on the World Bank's World Development Indicators (WDI) (2011–2021). The dataset covers 19 countries over 11 years, focusing on Europe, North America, and developed Asia. 
 
-Rather than examining these dimensions in isolation, we frame them as part of an employment–education–health triangle:  
-- **Employment vulnerability** may drive fiscal demand for health expenditure.  
-- **Education outcomes** shape labor market vulnerability by influencing skill levels and employability.  
-- **Health expenditure** and **education investment** both contribute to long-term human capital accumulation. 
-
-The dataset covers 19 countries over 11 years, focusing on Europe, North America, and developed Asia. Using both OLS (first differences) and panel fixed-effects estimation, we assess short-term shocks (COVID-19) and structural patterns across economies.  
-
-Findings show limited short-run explanatory power of aggregate WDI indicators, but highlight the importance of considering structural and institutional factors in how labor markets, education systems, and fiscal health policies interact. Future work could extend this analysis with longer-term panel data and a broader global sample to better capture long-run dynamics.  
- 
-## Research Questions
-1. Does an increase in health expenditure (% of GDP) reduce the share of vulnerable employment?
-2. Is there a measurable link between health spending and tertiary education investment or attainment? 
-3. How do these relationships hold under panel fixed-effects estimation, which controls for unobserved heterogeneity across countries and years?
-
-4. 1. Does an increase in health expenditure (% of GDP)** reduce the share of **vulnerable employment**?  
-2. Is there a measurable link between **health spending** and **tertiary education investment and/or attainment**?  
-3. How do these relationships hold under **panel fixed-effects estimation**, which controls for unobserved heterogeneity across countries and years?  
-
-
-## Data
-**Source**: [Kaggle WDI dataset](https://www.kaggle.com/datasets/parsabahramsari/wdi-education-health-and-employment-2011-2021)
-
-- **Health Expenditure**  
-  - Current health expenditure (% of GDP) — `SH.XPD.CHEX.GD.ZS`  
-  - Government health expenditure (% of GDP) — `SH.XPD.GHED.GD.ZS`  
-
-- **Employment**  
-  - Vulnerable employment (% of total employment) — `SL.EMP.VULN.ZS`  
-  - Unemployment, total (% of labor force) — `SL.UEM.TOTL.ZS`  
-  - Unemployment, youth (% of youth labor force) — `SL.UEM.1524.ZS`  
-
-- **Education**  
-  - Tertiary expenditure share (% of education budget) — `SE.XPD.CTER.ZS`  
-  - BA+ attainment (population 25+) — `SE.TER.CUAT.BA.ZS`  
-
-## Methods
-1. **Data Preprocessing**  
-   - Converted indicators to numeric, handled missing values.  
-   - Winsorization (1%–99%) applied to reduce outlier influence.  
-
-2. **Visualization**  
-   - Time-series line charts (cross-country health and education spending trends).  
-   - Scatter plots linking expenditure to vulnerable employment. 
-
-  
-<img width="970" height="399" alt="image" src="https://github.com/user-attachments/assets/dbb51e72-e95c-4080-b478-aee35a1d9b78" />
-
-<img width="1034" height="446" alt="image" src="https://github.com/user-attachments/assets/f0614a83-7a6e-493c-ab68-ea9f4401f123" />
-
-
-<img width="1034" height="432" alt="image" src="https://github.com/user-attachments/assets/c06db3ff-9998-4f4f-9fe5-ade767749cca" />
-
-
-<img width="1160" height="575" alt="image" src="https://github.com/user-attachments/assets/d8e8c36e-721f-4db8-b679-ac613deaf8a2" />
-
-
-
-3. **Econometric Analysis**  
-   - OLS (first differences, 2019–2021): ΔHealthExp and ΔGovHealthExp predicting changes in tertiary outcomes.  
-   - Panel Fixed Effects (Entity + Time, Clustered SE): Controlling for unobserved heterogeneity across countries and years.  
-   - Robust SE (HC3) for heteroscedasticity.  
+The analysis explores how levels of government health expenditure are associated with education attainment and employment statuses. The study interprets health expenditure as a form of **social protection investment**, highlighting fiscal pressures on health budgets, links between labour market vulnerability and economic performance, and long-term human capital accumulation. The objective is to demonstrate applied research skills in **data cleaning, empirical analysis, and policy-relevant interpretation**.
 
 ---
 
-## Results
+## 📌 Indicators Used
 
-| Model                               | Main Coefficients (ΔHealthExp / GovExp) | Robust SE | p-value | R² (within / overall) | Interpretation |
-| ----------------------------------- | ---------------------------------------- | --------- | ------- | --------------------- | --------------- |
-| **ΔTertiaryExpShare (OLS, 2019–21)** | β₁≈0.01, β₂≈-0.02                        | ~0.04–0.05 | 0.86    | R²=0.06               | Not significant |
-| **ΔBA+ Attainment (OLS, 2019–21)**  | β₁≈-0.03, β₂≈0.01                        | ~0.05     | 0.34    | R²=0.12               | Not significant |
-| **VulnerableEmployment (Panel FE)** | β₁≈-0.04, β₂≈+0.02                       | ~0.09     | 0.62    | Within=0.13 / Overall=0.03 | Weak fit, not robust |
-| **TertiaryExpShare (Panel FE)**     | β₁≈0.01, β₂≈-0.01                        | ~0.03     | 0.87    | Within=0.01 / Overall=-0.47 | Very low explanatory power |
+### 🎓 Education
+
+* EDU_Bachelors_25Plus_Total
+* EDU_LowerSecondary_25Plus_Total
+* EDU_PostSecondary_25Plus_Total
+* EDU_Primary_25Plus_Total
+* EDU_ShortCycleTertiary_25Plus_Total
+
+### 👷 Employment
+
+* JOB_Unemp_Total
+* JOB_Unemp_Youth_Total
+* JOB_VulnerableEmployment_Total
+* JOB_Part_Time_Total
+* JOB_Self_employed_Total
+* JOB_Contracters_Total
+
+### 🏥 Health Expenditure
+
+* GDP_Total_HealthExp
+* GDP_Gov_HealthExp
 
 ---
 
-## Interpretation
-- Health expenditure (both total and government share) shows no consistent short-term impact on employment vulnerability or tertiary education.  
-- Very low R² values suggest that structural and institutional factors** are stronger determinants than aggregate spending measures.  
-- Aggregate WDI indicators, while useful for cross-country comparison, may be insufficient for causal inference without richer policy or micro-level data.  
+## 📂 Repository Structure
 
-## Policy and Research Implications
-- Policy: Increasing health expenditure alone is unlikely to yield immediate gains in labor security or tertiary attainment.  
-- Research: Future studies should include lagged effects, education expenditure disaggregation, and causal designs (IV, DiD).  
-- Portfolio relevance: This project demonstrates applied skills in data cleaning, visualization, and panel econometrics for health economics and education research.
+```text
+WDI-Education-Employment-EconDev/
+│
+├── README.md
+├── WDI_V8_Final.ipynb                     # End-to-end codebook
+│
+├── notebooks/                             # Thematic notebooks
+│   ├── 01_data_preparation.ipynb
+│   ├── 02_education_econdev_analysis.ipynb
+│   ├── 03_employment_econdev_analysis.ipynb
+│   ├── 04_health_expenditure_linkages.ipynb (optional)
+│   └── 05_summary_policy_implications.ipynb
+│
+├── data/
+│   ├── WDI_Final_Processed.csv            # Processed dataset
+│   └── (link to raw WDI source)
+│
+└── figures/
+    ├── education_econdev_scatter.png
+    ├── employment_econdev_trends.png
+    └── regression_results.png
+```
 
-## Limitations
-- Aggregate indicators may mask heterogeneity across regions, policy regimes, and institutional quality.  
-- Potential endogeneity between health and education spending not addressed here.  
-- Short panel (2011–2021) limits ability to capture long-term lagged effects.  
-- Future extensions: Instrumental Variables (IV), panel ARDL, or natural experiments (DiD).
-  
+---
+
+## 📊 Methods
+
+1. **Data Preparation**
+
+   * Cleaning missing values and harmonising indicators
+   * Imputation for incomplete time series
+   * Standardisation of variables for comparability
+
+2. **Exploratory Analysis**
+
+   * Descriptive mapping of education, employment and health expenditure
+   * Visualisation of trends and regression outcomes
+
+3. **Econometric Analysis**
+
+   * Dependent variable: GDP_Gov_HealthExp
+   * Explanatory variables: education & employment indicators
+   * Panel fixed-effects regression with clustered / Driscoll–Kraay standard errors
+
+---
+
+## 📊 **Econometric Analysis**
+
+## 📊 Two-way Fixed Effects Regression Results
+
+This analysis examines how **labor market structures** and **education attainment** are associated with government health expenditure (% of GDP), using **two-way fixed effects with Driscoll–Kraay SE**.
+
+---
+
+### 🔹 Summary of Results
+
+| DomainExplanatory VariableCoefficient (β)p-valueInterpretation |                               |         |        |                                                                                |
+| -------------------------------------------------------------- | ----------------------------- | ------- | ------ | ------------------------------------------------------------------------------ |
+| **Labor Market**                                               | Unemployment                  | 0.0661  | 0.0037 | Higher unemployment → ↑ Gov. health expenditure share (**significant**)        |
+|                                                                | Vulnerable Employment         | 0.1304  | 0.331  | Not significant                                                                |
+|                                                                | Part-time Employment          | 0.0208  | 0.060  | Weak positive effect (10% level)                                               |
+|                                                                | Contract Employment           | 0.2195  | 0.021  | Higher contractors → ↑ Gov. health expenditure share (**significant**)         |
+| **Education (contemporaneous)**                                | Secondary                     | -0.0108 | 0.134  | Not significant                                                                |
+|                                                                | Post-secondary (non-tertiary) | -0.0264 | 0.071  | Marginal negative effect                                                       |
+|                                                                | Tertiary                      | -0.0414 | 0.0049 | Higher tertiary attainment → ↓ Gov. health expenditure share (**significant**) |
+| **Education (lagged 1y)**                                      | Secondary (t-1)               | -0.0152 | 0.035  | Significant delayed negative effect                                            |
+|                                                                | Post-secondary (t-1)          | -0.0057 | 0.674  | Not significant                                                                |
+|                                                                | Tertiary (t-1)                | -0.0051 | 0.762  | Not significant                                                                |
+
+
+<img width="677" height="364" alt="image" src="https://github.com/user-attachments/assets/39449f0a-9f70-4740-bcc7-d5cb9b737b93" />
+
+## ✅ Implications
+
+### Labour market dynamics and fiscal pressure
+Rising unemployment and contract-based work are strongly linked to higher government health expenditure share, suggesting that labour market insecurity directly increases public health financing needs.
+
+This reflects the counter-cyclical nature of health budgets: governments tend to absorb more health costs when workers face unstable employment.
+
+### Education attainment and fiscal reprioritisation
+Higher tertiary education attainment correlates with a smaller share of GDP spent by government on health.
+
+This may imply that as populations become more educated, health financing shifts relatively towards private sources (insurance, out-of-pocket, employer-based schemes) or governments reallocate budgets to other priorities.
+
+### Temporal asymmetry
+Education effects are mostly contemporaneous: tertiary attainment matters in the same year but not the following year.
+
+Labour market effects are more persistent: unemployment and contractualisation drive government health expenditure up regardless of short-term volatility.
+
+### Policy takeaways
+- **Counter-cyclical safety nets**: Governments must anticipate rising health spending when labour markets weaken.  
+- **Equity concerns**: Expanding tertiary education may unintentionally reduce the government’s relative fiscal role in health, raising risks of inequity in access if private financing dominates.  
+- **Balanced strategy**: Integrating labour market protection with sustainable health financing policies is critical to avoid both fiscal shocks and social inequities.  
+
+---
+
+## 📌 Policy Implications
+
+> **Labour market shocks and fiscal response**  
+> • Rising unemployment and contract-based work significantly increase the share of government health expenditure in GDP, highlighting the counter-cyclical role of public budgets.  
+>
+> **Education-driven structural shifts**  
+> • Higher tertiary education attainment is associated with a smaller government share in health financing, suggesting fiscal reallocation and stronger reliance on private sources.  
+>
+> **Equity and sustainability**  
+> • Policymakers should anticipate fiscal pressures during labour market downturns while safeguarding equity as education-driven changes reshape the balance between public and private health financing.
