@@ -1,4 +1,4 @@
-# ⭐⭐ Eugenie's Health Data Analysis Portfolio  ⭐⭐
+# Eugenie's Health Data Analysis Portfolio
 
 This repository showcases practical applications of data science in global health, ranging from LLM-based drug discovery to interactive WHO dashboards. These projects were developed both independently and collaboratively through a data science bootcamp program. Please note that using [GEMINI API](https://ai.google.dev/gemini-api/docs/api-key?hl=ko) provides accessible LLM protocols within free usage limits for experimentation.
 
@@ -81,3 +81,11 @@ This Streamlit-based chatbot leverages LangChain and RAG to explore relevant OEC
     - [Blot Post](https://eugenie-kim012.tistory.com/10)
 - **Policy Implications**:
 Interactive dashboards enable governments and development partners to monitor progress toward SDGs and WHO targets. This facilitates transparent accountability, evidence-based resource allocation, and informed global health diplomacy decisions.
+
+## 6. 📊 Employment Vulnerability, Education Outcomes and Health Expenditure 
+
+📌 Abstract
+
+This project investigates the dynamics between employment vulnerability, education outcomes and health expenditure in high-income countries, using cross-country panel data from the Kaggle WDI dataset – based on the World Bank's World Development Indicators (WDI) (2011–2021). The dataset covers 19 countries over 11 years, focusing on Europe, North America, and developed Asia. 
+
+The analysis explores how levels of government health expenditure are associated with education attainment and employment statuses. The study interprets health expenditure as a form of social protection investment, highlighting fiscal pressures on health budgets, links between labour market vulnerability and economic performance, and long-term human capital accumulation. The objective is to demonstrate applied research skills in data cleaning, empirical analysis, and policy-relevant interpretation.
