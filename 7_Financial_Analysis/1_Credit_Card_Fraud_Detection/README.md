@@ -4,8 +4,6 @@ This project implements a **Supervised Machine Learning framework** to detect fr
 
 URL - https://www.kaggle.com/competitions/modu-ds-4-credit-card-fraud-detection/submissions
 
-![IMG_2599.png](attachment:3d4b51fa-550c-444a-9b35-e8956a0094f5:1ec2f779-19c5-4938-851b-67577807fd55.png)
-
 ### Key Technical Focus
 
 | Area | Methodology & Goal |
@@ -32,7 +30,7 @@ The project recognised that standard **Accuracy** ($\approx 99\%$) is a trivial 
 
 ### 2.2. Data_sampling.md
 
-```
+```markdown
 ## 🔨 Handling Data Imbalance: Sampling Techniques Summary
 
 In **credit card fraud detection** or similar tasks with **highly imbalanced datasets**, the model’s performance — particularly **recall (sensitivity)** — can be significantly affected.
@@ -101,7 +99,7 @@ X_resampled, y_resampled = smote_enn.fit_resample(X, y)
 
 ### 2.3. Data_Processing_Pipeline.md
 
-```
+```markdown
 ## 🧮 Data Preprocessing Pipeline
 
 This section documents the **modular preprocessing pipeline** implemented in the fraud-detection notebook.  
