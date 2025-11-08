@@ -1,6 +1,6 @@
-# 🧬 Cost-Effectiveness Analysis – Streamlit prototype (Integrated)
+CE_Studio"의 파일 저장소(repository) 구조
 
-'''
+```
 CE_Studio/
 ├── app.py
 ├── requirements.txt
@@ -17,4 +17,5 @@ CE_Studio/
     ├── forecast.py
     ├── optimize.py
     └── report.py
-'''
+```
+
