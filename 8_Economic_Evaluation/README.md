@@ -1,5 +1,6 @@
 # 🧬 Cost-Effectiveness Analysis – Streamlit prototype (Integrated)
 
+'''
 CE_Studio/
 ├── app.py
 ├── requirements.txt
@@ -16,3 +17,4 @@ CE_Studio/
     ├── forecast.py
     ├── optimize.py
     └── report.py
+'''
